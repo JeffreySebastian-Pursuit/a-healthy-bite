@@ -10,7 +10,8 @@ const Home = ({ setCategory }) => {
   return (
     <div>
       <h1 className="text-center">A HEALTHY BITE</h1>
-      <h4 className="text-center">Healthy food for every mood</h4>
+      <h5 className="text-center">Healthy food for every mood.</h5>
+
       <div id="category">
         <div className="item">
           <ul onClick={handleSelection}>
@@ -24,37 +25,45 @@ const Home = ({ setCategory }) => {
             </li>
           </ul>
         </div>
+
         <div className="item">
-          <Link to="/recipes">
-            <img
-              src="https://www.mississippivegan.com/wp-content/uploads/2017/07/bowl-1.jpg"
-              alt="vegetarian"
-              className="image"
-            />
-            <span className="caption">Vegetarian</span>
-          </Link>
+          <ul onClick={handleSelection}>
+            <li onClick={() => setCategory("vegetarian")}>
+              <img
+                src="https://domf5oio6qrcr.cloudfront.net/medialibrary/6054/f5282d05-33f5-4c93-a08e-b000164a54db.jpg"
+                alt="vegetarian"
+                className="image"
+              />
+              <span className="caption">Vegetarian</span>
+            </li>
+          </ul>
         </div>
         <div className="item">
-          <Link to="/recipes">
-            <img
-              src="https://www.mississippivegan.com/wp-content/uploads/2017/07/bowl-1.jpg"
-              alt="protein"
-              className="image"
-            />
-            <span className="caption">Protein</span>
-          </Link>
+          <ul onClick={handleSelection}>
+            <li onClick={() => setCategory("protein")}>
+              <img
+                src="https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/Introduction-to-Protein.jpg"
+                alt="protein"
+                className="image"
+              />
+              <span className="caption">Protein</span>
+            </li>
+          </ul>
         </div>
         <div className="item">
-          <Link to="/recipes">
-            <img
-              src="https://www.mississippivegan.com/wp-content/uploads/2017/07/bowl-1.jpg"
-              alt="smoothie"
-              className="image"
-            />
-            <span className="caption">Smoothie</span>
-          </Link>
+          <ul onClick={handleSelection}>
+            <li onClick={() => setCategory("smoothie")}>
+              <img
+                src="https://www.jessicagavin.com/wp-content/uploads/2020/01/how-to-make-a-smoothie-22-1200.jpg"
+                alt="smoothie"
+                className="image"
+              />
+              <span className="caption">Smoothie</span>
+            </li>
+          </ul>
         </div>
       </div>
+      <footer className="footer"></footer>
     </div>
   );
 };
