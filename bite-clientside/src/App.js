@@ -16,12 +16,17 @@ function App() {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
+        console.log(process.env.REACT_APP_API_KEY)
+        debugger
         const res = await axios.get(
-          `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&diet=${category}&number=1`
+          `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&diet=${category}&number=10`
         );
-
-        // console.log(res.data.results);
+debugger
+        console.log(res.data.results);
+        debugger
         setRecipes(res.data.results);
+        debugger
+
         // setCategory()
       } catch (err) {
         console.log(err);
@@ -48,7 +53,7 @@ function App() {
           {/* Index */}
           <Route exact path="/recipes">
 			 {/* mapping through the array */}
-            <Recipes recipes={recipes} />
+            <Recipes recipes={recipes} category={category}/>
           </Route>
           {/* Show */}
           <Route exact path="/recipes/:id">

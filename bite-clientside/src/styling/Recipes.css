@@ -1,0 +1,38 @@
+.recipes{
+    background-color: cornsilk;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: darkkhaki; */
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cadetblue;
+}
+
+li{
+    border: solid 5px rgb(43, 128, 28);
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(166, 212, 154);
+}
+li p{
+    margin: 5px;
+}
+li img{
+    height: 100px;
+    width: 100px;
+}
+
