@@ -14,7 +14,7 @@ https://a-healthy-bite.netlify.app
 
 ```
 ## Team Members
-Coreen Cooper: Technical Lead
-Jeffrey Sebastian: Design Lead
-Jonathan Bedon: Demo Lead
+Coreen Cooper: Technical Lead,
+Jeffrey Sebastian: Design Lead,
+Jonathan Bedon: Demo Lead,
 Marsha Hall: Scrum Master/Project Manager
