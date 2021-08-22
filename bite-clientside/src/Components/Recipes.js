@@ -1,31 +1,7 @@
 import React from "react";
-import Recipe from "./Recipe";
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import axios from "axios";
 import "../styling/Recipes.css";
 
 const Recipes = ({ category, recipes }) => {
-  // const [ id, setId] = useState(null)
-  //   const [recipes, setRecipes] = useState([]);
-
-  //   useEffect(() => {
-  //     const fetchRecipes = async () => {
-  //       try {
-  //         const res = await axios.get(
-  //           `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&diet=${category}&number=1`
-  //         );
-
-  //         // console.log(res.data.results);
-  //         setRecipes(res.data.results);
-  //         // setCategory()
-  //       } catch (err) {
-  //         console.log(err);
-  //       }
-  //     };
-  //     fetchRecipes();
-  //   }, [category]);
-
   return (
     <div className="recipes">
       <h1>List of Recipes from category {category}</h1>
@@ -35,10 +11,10 @@ const Recipes = ({ category, recipes }) => {
         much.
       </div>
 
-      <ul>
+      <ul className="recipe">
         {recipes.map((recipe) => {
           return (
-            <li key={recipe.id}>
+            <li key={recipe.id} className="recipeList">
               <a href={`/recipes/${recipe.id}`}>
                 <p>{recipe.title}</p>
                 <img src={recipe.image} alt="food pic" />
