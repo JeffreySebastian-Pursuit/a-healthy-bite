@@ -40,25 +40,25 @@ const Home = ({ setCategory }) => {
         </div>
         <div className="item">
           <ul onClick={handleSelection}>
-            <li onClick={() => setCategory("protein")}>
+            <li onClick={() => setCategory("ketogenic")}>
               <img
-                src="https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/Introduction-to-Protein.jpg"
-                alt="protein"
+                src="https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/Introduction-toketogenic.jpg"
+                alt="ketogenic"
                 className="image"
               />
-              <span className="caption">Protein</span>
+              <span className="caption">ketogenic</span>
             </li>
           </ul>
         </div>
         <div className="item">
           <ul onClick={handleSelection}>
-            <li onClick={() => setCategory("smoothie")}>
+            <li onClick={() => setCategory("Pescetarian")}>
               <img
                 src="https://www.jessicagavin.com/wp-content/uploads/2020/01/how-to-make-a-smoothie-22-1200.jpg"
                 alt="smoothie"
                 className="image"
               />
-              <span className="caption">Smoothie</span>
+              <span className="caption">Pescetarian</span>
             </li>
           </ul>
         </div>
