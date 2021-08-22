@@ -9,19 +9,16 @@ const Recipe = () => {
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
-		  const res = await axios.get(
-			  `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}&includeNutrition=false`
-			  );
-			  debugger
-		// debugger
+        const res = await axios.get(
+          `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}&includeNutrition=false`
+        );
         setRecipe(res.data);
-        console.log(res.data);
       } catch (error) {}
     };
     fetchRecipe();
   }, [id]);
 
-  const { title, summary, image, sourceURL} = recipe;
+  const { title, summary, image, sourceURL } = recipe;
 
   return (
     <div>
@@ -29,7 +26,7 @@ const Recipe = () => {
       <p>Title: {title}</p>
       <img src={image} alt="vegan" />
       <p>Summary: {summary}</p>
-	  <a href={sourceURL}>Click for more information</a>
+      <a href={sourceURL}>Click for more information</a>
     </div>
   );
 };
