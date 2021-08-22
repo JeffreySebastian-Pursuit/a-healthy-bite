@@ -3,6 +3,7 @@ import axios from "axios";
 import "../styling/Recipe.css";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import convertSummary from "../tools/convertSummary";
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState({});
@@ -23,10 +24,14 @@ const Recipe = () => {
 
   return (
     <div>
+
+
+     
+
       <div className="heading">
         <div className="lists">
         <h1 className="title">Title: {title}</h1>
-          <p id="summary">{summary}</p>
+          <p id="summary"> {convertSummary( summary)}</p>
           <a href={sourceUrl} target="_blank" rel="noreferrer">
             Click for more information
           </a>
