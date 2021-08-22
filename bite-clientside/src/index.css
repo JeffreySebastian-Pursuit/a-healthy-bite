@@ -221,7 +221,50 @@ ul li {
   }  
 }
 
-@media screen and (max-width: 768px) and (min-width: 415px) {
+@media screen and (max-width: 540px) and (min-width: 415px) {
+  #recipeIcon {
+    height: 80px;
+    width: 80px;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .Heading-Title {
+    font-size: 40px;
+  }
+
+  .Subheading {
+    font-size: 20px;
+  }
+
+  #category {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 50px;
+    margin-left: 200px;
+    margin-right: 250px;
+    margin-top: 30px;
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer {
+    height: 100px;
+  }
+
+  .caption {
+    font-size: 16px;
+  }
+
+  div.item {
+    width: 300px;
+  }  
+}
+
+@media screen and (max-width: 768px) and (min-width: 541px) {
   #recipeIcon {
     height: 100px;
     width: 100px;
