@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import convertSummary from "../tools/convertSummary";
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState({});
@@ -25,7 +26,8 @@ const Recipe = () => {
       Ingredients and directions
       <p>Title: {title}</p>
       <img src={image} alt="vegan" />
-      <p>Summary: {summary}</p>
+      {/* <p>Summary: {convertSummary(summary)}</p> */}
+	  {convertSummary( summary)}
       <a href={sourceURL}>Click for more information</a>
     </div>
   );
