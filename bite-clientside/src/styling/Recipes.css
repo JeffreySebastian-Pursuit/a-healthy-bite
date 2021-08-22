@@ -348,46 +348,42 @@ h1 {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  #recipeIcon {
-    height: 150px;
-    width: 150px;
-    padding: 0;
-    margin: 20px;
-  }
-
-  .Heading-Title {
-    font-size: 60px;
-  }
-
-  .Subheading {
-    font-size: 30px;
-  }
-
-  #category {
-    display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 150px;
-    margin-top: 80px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-
-  .image {
-    width: 200px;
-    height: 200px;
-  }
-
-  .footer {
-    margin-top: 135px;
-    height: 150px;
-  }
-
-  .caption {
-    font-size: 30px;
-  }
-
-  div.item {
-    width: 300px;
-  }
+    h1 {
+        font-family: "Copperplate";
+        font-size: 55px;
+        text-align: center;
+        margin: 10px 20px 10px 30px;
+    
+      }
+      .category-summary {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 25px;
+        margin: 10px 20px 10px 30px;
+    
+      }
+      
+      .recipe {
+          display: grid;
+          grid-template-columns: auto auto auto;
+      }
+      
+      .recipeList {
+        border: solid 5px rgb(188, 223, 182);
+        height: 250px;
+        width: 230px;
+        padding: 25px;
+        margin: 30px 0 10px 30px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(193, 226, 185);
+      }
+      .recipeList p {
+        margin: 5px;
+      }
+      .recipeList img {
+        height: 150px;
+        width: 150px;
+        border-radius: 12px;
+      }   
 }
