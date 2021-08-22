@@ -29,7 +29,7 @@ const Recipe = () => {
       </Link>
       <div className="heading">
         <div className="lists">
-          <h1 className="title">Title: {title}</h1>
+          <h1 className="title">{title}</h1>
           <p id="summary"> {convertSummary(summary)}</p>
           <a href={sourceUrl} target="_blank" rel="noreferrer">
             Click for more information
