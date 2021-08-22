@@ -1,6 +1,6 @@
-import Recipes from "./Recipes";
-import { Link, useHistory } from "react-router-dom";
-import { useState } from "react";
+
+import {useHistory } from "react-router-dom";
+
 
 const Home = ({ setCategory }) => {
   const history = useHistory();
@@ -21,7 +21,7 @@ const Home = ({ setCategory }) => {
                 alt="vegan"
                 className="image"
               />
-              <span className="caption">Vegan</span>
+              <p className="caption">Vegan</p>
             </li>
           </ul>
         </div>
@@ -34,7 +34,7 @@ const Home = ({ setCategory }) => {
                 alt="vegetarian"
                 className="image"
               />
-              <span className="caption">Vegetarian</span>
+              <p className="caption">Vegetarian</p>
             </li>
           </ul>
         </div>
@@ -46,19 +46,19 @@ const Home = ({ setCategory }) => {
                 alt="ketogenic"
                 className="image"
               />
-              <span className="caption">ketogenic</span>
+              <p className="caption">Ketogenic</p>
             </li>
           </ul>
         </div>
         <div className="item">
           <ul onClick={handleSelection}>
-            <li onClick={() => setCategory("Pescetarian")}>
+            <li onClick={() => setCategory("pescetarian")}>
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZvwHaQUuryT0WbnBSYTjwInC68KNTpzoWw&usqp=CAU"
                 alt="pescetarian"
                 className="image"
               />
-              <span className="caption">Pescetarian</span>
+              <p className="caption">Pescetarian</p>
             </li>
           </ul>
         </div>
