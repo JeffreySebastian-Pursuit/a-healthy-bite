@@ -21,7 +21,7 @@ const Home = ({ setCategory }) => {
                 alt="vegan"
                 className="image"
               />
-              <span className="caption">Vegan</span>
+              <p className="caption">Vegan</p>
             </li>
           </ul>
         </div>
@@ -34,7 +34,7 @@ const Home = ({ setCategory }) => {
                 alt="vegetarian"
                 className="image"
               />
-              <span className="caption">Vegetarian</span>
+              <p className="caption">Vegetarian</p>
             </li>
           </ul>
         </div>
@@ -46,7 +46,7 @@ const Home = ({ setCategory }) => {
                 alt="ketogenic"
                 className="image"
               />
-              <span className="caption">Ketogenic</span>
+              <p className="caption">Ketogenic</p>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@ const Home = ({ setCategory }) => {
                 alt="pescetarian"
                 className="image"
               />
-              <span className="caption">Pescetarian</span>
+              <p className="caption">Pescetarian</p>
             </li>
           </ul>
         </div>
