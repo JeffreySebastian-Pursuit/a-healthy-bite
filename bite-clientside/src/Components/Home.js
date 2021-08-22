@@ -1,6 +1,6 @@
-import Recipes from "./Recipes";
-import { Link, useHistory } from "react-router-dom";
-import { useState } from "react";
+
+import {useHistory } from "react-router-dom";
+
 
 const Home = ({ setCategory }) => {
   const history = useHistory();
