@@ -24,20 +24,20 @@ const Recipe = () => {
 
   return (
     <div>
-
-
-     
-
+      <Link to={`/recipes`}>
+        <button>Back</button>
+      </Link>
       <div className="heading">
         <div className="lists">
-        <h1 className="title">Title: {title}</h1>
-          <p id="summary"> {convertSummary( summary)}</p>
+          <h1 className="title">Title: {title}</h1>
+          <p id="summary"> {convertSummary(summary)}</p>
           <a href={sourceUrl} target="_blank" rel="noreferrer">
             Click for more information
           </a>
         </div>
         <img src={image} alt="vegan" className="recipeImage" />
       </div>
+      <footer className="footer"></footer>
     </div>
   );
 };

@@ -8,14 +8,23 @@ body {
   padding: 20px;
 }
 
-.text-center {
+.Heading-Title {
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 60px;
+}
+.Subheading{
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	font-size: 25px;
+
 }
 #category {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
-  margin-right: 200px
+  margin-right: 200px;
+  margin-bottom: 20px;
 }
 div.item {
   vertical-align: top;
@@ -28,6 +37,10 @@ div.item {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  opacity: 0.5;
+}
+.image:hover{
+	opacity: 1.0;
 }
 
 .caption {
@@ -45,5 +58,5 @@ ul li {
 
 .footer {
   background-color: rgb(22, 84, 38);
-  height: 240px;
+  height: 230px;
 }

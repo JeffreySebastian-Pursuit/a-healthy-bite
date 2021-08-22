@@ -9,8 +9,8 @@ const Home = ({ setCategory }) => {
   };
   return (
     <div>
-      <h1 className="text-center">A HEALTHY BITE</h1>
-      <h5 className="text-center">Healthy food for every mood.</h5>
+      <h1 className="Heading-Title">A HEALTHY BITE</h1>
+      <h5 className="Subheading">Healthy food for every mood.</h5>
 
       <div id="category">
         <div className="item">
