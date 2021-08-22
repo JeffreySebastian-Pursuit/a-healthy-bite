@@ -42,7 +42,7 @@ const Home = ({ setCategory }) => {
           <ul onClick={handleSelection}>
             <li onClick={() => setCategory("ketogenic")}>
               <img
-                src="https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/Introduction-toketogenic.jpg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDPdnWFXD3kloqBBy4nYwfFCfRfbvrUHC3w&usqp=CAU"
                 alt="ketogenic"
                 className="image"
               />
@@ -54,8 +54,8 @@ const Home = ({ setCategory }) => {
           <ul onClick={handleSelection}>
             <li onClick={() => setCategory("Pescetarian")}>
               <img
-                src="https://www.jessicagavin.com/wp-content/uploads/2020/01/how-to-make-a-smoothie-22-1200.jpg"
-                alt="smoothie"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZvwHaQUuryT0WbnBSYTjwInC68KNTpzoWw&usqp=CAU"
+                alt="pescetarian"
                 className="image"
               />
               <span className="caption">Pescetarian</span>

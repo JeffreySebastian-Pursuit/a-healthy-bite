@@ -1,38 +1,33 @@
-.recipes{
-    background-color: cornsilk;
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    /* background-color: darkkhaki; */
-}
-
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: cadetblue;
+.category-summary {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-li{
-    border: solid 5px rgb(43, 128, 28);
-    height: 300px;
-    width: 300px;
-    padding: 50px;
-    margin:20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(166, 212, 154);
-}
-li p{
-    margin: 5px;
-}
-li img{
-    height: 100px;
-    width: 100px;
+.recipe {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
+.recipeList {
+  border: solid 5px rgb(188, 223, 182);
+  height: 300px;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(193, 226, 185);
+}
+.recipeList p {
+  margin: 5px;
+}
+.recipeList img {
+  height: 150px;
+  width: 150px;
+}

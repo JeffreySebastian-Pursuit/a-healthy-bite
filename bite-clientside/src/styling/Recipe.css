@@ -1,0 +1,33 @@
+.heading{
+display: grid;
+grid-template-columns: auto auto;
+
+}
+.lists {
+    margin-top: 40px;
+    text-indent: 50px;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+.title{
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 30px;
+}
+.recipeImage{
+    height: 500px;
+    width: 500px;
+    /* margin-left: 480px; */
+}
+.summaryHeading{
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+#summary{
+    font-family: "Times New Roman", Times, serif;
+    /* font-size: 20px;
+    margin: 25px 150px; */
+}

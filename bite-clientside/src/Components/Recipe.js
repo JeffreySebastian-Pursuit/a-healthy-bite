@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "../styling/Recipe.css";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import convertSummary from "../tools/convertSummary";
@@ -19,16 +20,24 @@ const Recipe = () => {
     fetchRecipe();
   }, [id]);
 
-  const { title, summary, image, sourceURL } = recipe;
+  const { title, summary, image, sourceUrl } = recipe;
 
   return (
     <div>
-      Ingredients and directions
-      <p>Title: {title}</p>
-      <img src={image} alt="vegan" />
-      {/* <p>Summary: {convertSummary(summary)}</p> */}
-	  {convertSummary( summary)}
-      <a href={sourceURL}>Click for more information</a>
+
+
+     
+
+      <div className="heading">
+        <div className="lists">
+        <h1 className="title">Title: {title}</h1>
+          <p id="summary"> {convertSummary( summary)}</p>
+          <a href={sourceUrl} target="_blank" rel="noreferrer">
+            Click for more information
+          </a>
+        </div>
+        <img src={image} alt="vegan" className="recipeImage" />
+      </div>
     </div>
   );
 };
