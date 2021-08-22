@@ -46,13 +46,13 @@ const Home = ({ setCategory }) => {
                 alt="ketogenic"
                 className="image"
               />
-              <span className="caption">ketogenic</span>
+              <span className="caption">Ketogenic</span>
             </li>
           </ul>
         </div>
         <div className="item">
           <ul onClick={handleSelection}>
-            <li onClick={() => setCategory("Pescetarian")}>
+            <li onClick={() => setCategory("pescetarian")}>
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZvwHaQUuryT0WbnBSYTjwInC68KNTpzoWw&usqp=CAU"
                 alt="pescetarian"
