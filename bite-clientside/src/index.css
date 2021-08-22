@@ -221,3 +221,47 @@ ul li {
     width: 300px;
   }  
 }
+
+@media screen and (max-width: 768px) and (min-width: 415px) {
+  #recipeIcon {
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    margin: 20px;
+  }
+
+  .Heading-Title {
+    font-size: 40px;
+  }
+
+  .Subheading {
+    font-size: 20px;
+  }
+
+  #category {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    row-gap: 80px;
+    margin-top: 60px;
+
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .footer {
+    margin-top: 135px;
+    height: 100px;
+  }
+
+  .caption {
+    font-size: 20px;
+  }
+
+  div.item {
+    width: 300px;
+  }  
+}
