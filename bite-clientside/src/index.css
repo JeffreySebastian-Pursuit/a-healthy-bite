@@ -181,3 +181,43 @@ ul li {
     width: 300px;
   }  
 }
+
+@media screen and (max-width: 414px) and (min-width: 412px) {
+  #recipeIcon {
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .Heading-Title {
+    font-size: 25px;
+  }
+
+  .Subheading {
+    font-size: 15px;
+  }
+
+  #category {
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+  }
+
+  .image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .footer {
+    height: 100px;
+  }
+
+  .caption {
+    font-size: 16px;
+  }
+
+  div.item {
+    width: 300px;
+  }  
+}
