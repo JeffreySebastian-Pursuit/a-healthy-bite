@@ -52,7 +52,7 @@ const Home = ({ setCategory }) => {
         </div>
         <div className="item">
           <ul onClick={handleSelection}>
-            <li onClick={() => setCategory("Pescetarian")}>
+            <li onClick={() => setCategory("pescetarian")}>
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZvwHaQUuryT0WbnBSYTjwInC68KNTpzoWw&usqp=CAU"
                 alt="pescetarian"
