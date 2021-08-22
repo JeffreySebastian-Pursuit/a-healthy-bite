@@ -1,5 +1,8 @@
 import { useHistory } from "react-router-dom";
+<<<<<<< HEAD
 
+=======
+>>>>>>> ebf96ac705f78a60cb10b11bb16638db5a1930f3
 const Home = ({ setCategory }) => {
   const history = useHistory();
   const handleSelection = () => {
