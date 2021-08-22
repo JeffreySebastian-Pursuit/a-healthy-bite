@@ -10,8 +10,8 @@ h1 {
 }
 
 .recipe {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .recipeList {
@@ -32,8 +32,6 @@ h1 {
   width: 150px;
   border-radius: 12px;
 }
-<<<<<<< HEAD
-=======
 
 @media screen and (max-width: 280px) {
   h1 {
@@ -41,21 +39,19 @@ h1 {
     font-size: 25px;
     text-align: center;
     margin: 10px 20px 10px 30px;
-
   }
   .category-summary {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 12px;
     margin: 10px 20px 10px 30px;
+  }
 
-  }
-  
   .recipe {
-      display: grid;
-      grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: auto;
   }
-  
+
   .recipeList {
     border: solid 5px rgb(188, 223, 182);
     height: 250px;
@@ -77,251 +73,237 @@ h1 {
 }
 
 @media screen and (max-width: 320px) and (min-width: 281px) {
-    h1 {
-      font-family: "Copperplate";
-      font-size: 25px;
-      text-align: center;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    .category-summary {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-align: center;
-      font-size: 12px;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    
-    .recipe {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .recipeList {
-      border: solid 5px rgb(188, 223, 182);
-      height: 250px;
-      width: 230px;
-      padding: 25px;
-      margin: 10px 0 10px 5px;
-      display: flex;
-      align-items: center;
-      background-color: rgb(193, 226, 185);
-    }
-    .recipeList p {
-      margin: 5px;
-    }
-    .recipeList img {
-      height: 150px;
-      width: 150px;
-      border-radius: 12px;
-    }  
+  h1 {
+    font-family: "Copperplate";
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 20px 10px 30px;
+  }
+  .category-summary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 20px 10px 30px;
+  }
+
+  .recipe {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .recipeList {
+    border: solid 5px rgb(188, 223, 182);
+    height: 250px;
+    width: 230px;
+    padding: 25px;
+    margin: 10px 0 10px 5px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(193, 226, 185);
+  }
+  .recipeList p {
+    margin: 5px;
+  }
+  .recipeList img {
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
+  }
 }
 
 @media screen and (max-width: 360px) and (min-width: 321px) {
-    h1 {
-      font-family: "Copperplate";
-      font-size: 25px;
-      text-align: center;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    .category-summary {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-align: center;
-      font-size: 12px;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    
-    .recipe {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .recipeList {
-      border: solid 5px rgb(188, 223, 182);
-      height: 250px;
-      width: 230px;
-      padding: 25px;
-      margin: 10px 0 10px 37px;
-      display: flex;
-      align-items: center;
-      background-color: rgb(193, 226, 185);
-    }
-    .recipeList p {
-      margin: 5px;
-    }
-    .recipeList img {
-      height: 150px;
-      width: 150px;
-      border-radius: 12px;
-    }  
+  h1 {
+    font-family: "Copperplate";
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 20px 10px 30px;
+  }
+  .category-summary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 20px 10px 30px;
+  }
+
+  .recipe {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .recipeList {
+    border: solid 5px rgb(188, 223, 182);
+    height: 250px;
+    width: 230px;
+    padding: 25px;
+    margin: 10px 0 10px 37px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(193, 226, 185);
+  }
+  .recipeList p {
+    margin: 5px;
+  }
+  .recipeList img {
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
+  }
 }
 
 @media screen and (max-width: 375px) and (min-width: 361px) {
-    h1 {
-      font-family: "Copperplate";
-      font-size: 25px;
-      text-align: center;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    .category-summary {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-align: center;
-      font-size: 12px;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    
-    .recipe {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .recipeList {
-      border: solid 5px rgb(188, 223, 182);
-      height: 250px;
-      width: 230px;
-      padding: 25px;
-      margin: 10px 0 10px 37px;
-      display: flex;
-      align-items: center;
-      background-color: rgb(193, 226, 185);
-    }
-    .recipeList p {
-      margin: 5px;
-    }
-    .recipeList img {
-      height: 150px;
-      width: 150px;
-      border-radius: 12px;
-    }  
+  h1 {
+    font-family: "Copperplate";
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 20px 10px 30px;
+  }
+  .category-summary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 20px 10px 30px;
+  }
+
+  .recipe {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .recipeList {
+    border: solid 5px rgb(188, 223, 182);
+    height: 250px;
+    width: 230px;
+    padding: 25px;
+    margin: 10px 0 10px 37px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(193, 226, 185);
+  }
+  .recipeList p {
+    margin: 5px;
+  }
+  .recipeList img {
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
+  }
 }
 
 @media screen and (max-width: 411px) and (min-width: 376px) {
-    h1 {
-      font-family: "Copperplate";
-      font-size: 30px;
-      text-align: center;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    .category-summary {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-align: center;
-      font-size: 14px;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    
-    .recipe {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .recipeList {
-      border: solid 5px rgb(188, 223, 182);
-      height: 250px;
-      width: 230px;
-      padding: 25px;
-      margin: 10px 0 10px 50px;
-      display: flex;
-      align-items: center;
-      background-color: rgb(193, 226, 185);
-    }
-    .recipeList p {
-      margin: 5px;
-    }
-    .recipeList img {
-      height: 150px;
-      width: 150px;
-      border-radius: 12px;
-    }  
+  h1 {
+    font-family: "Copperplate";
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 20px 10px 30px;
+  }
+  .category-summary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 20px 10px 30px;
+  }
+
+  .recipe {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .recipeList {
+    border: solid 5px rgb(188, 223, 182);
+    height: 250px;
+    width: 230px;
+    padding: 25px;
+    margin: 10px 0 10px 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(193, 226, 185);
+  }
+  .recipeList p {
+    margin: 5px;
+  }
+  .recipeList img {
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
+  }
 }
 
 @media screen and (max-width: 414px) and (min-width: 412px) {
-    h1 {
-      font-family: "Copperplate";
-      font-size: 40px;
-      text-align: center;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    .category-summary {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-align: center;
-      font-size: 16px;
-      margin: 10px 20px 10px 30px;
-  
-    }
-    
-    .recipe {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .recipeList {
-      border: solid 5px rgb(188, 223, 182);
-      height: 250px;
-      width: 230px;
-      padding: 25px;
-      margin: 10px 0 10px 50px;
-      display: flex;
-      align-items: center;
-      background-color: rgb(193, 226, 185);
-    }
-    .recipeList p {
-      margin: 5px;
-    }
-    .recipeList img {
-      height: 150px;
-      width: 150px;
-      border-radius: 12px;
-    }   
+  h1 {
+    font-family: "Copperplate";
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 20px 10px 30px;
+  }
+  .category-summary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 20px 10px 30px;
+  }
+
+  .recipe {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .recipeList {
+    border: solid 5px rgb(188, 223, 182);
+    height: 250px;
+    width: 230px;
+    padding: 25px;
+    margin: 10px 0 10px 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(193, 226, 185);
+  }
+  .recipeList p {
+    margin: 5px;
+  }
+  .recipeList img {
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
+  }
 }
 
 @media screen and (max-width: 540px) and (min-width: 415px) {
-  #recipeIcon {
-    height: 80px;
-    width: 80px;
-    padding: 0;
-    margin: 10px;
-  }
-
-  .Heading-Title {
+  h1 {
+    font-family: "Copperplate";
     font-size: 40px;
+    text-align: center;
+    margin: 10px 20px 10px 30px;
+  }
+  .category-summary {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 20px 10px 30px;
   }
 
-  .Subheading {
-    font-size: 20px;
-  }
-
-  #category {
+  .recipe {
     display: grid;
     grid-template-columns: auto;
-    row-gap: 50px;
-    margin-left: 200px;
-    margin-right: 250px;
-    margin-top: 30px;
   }
 
-  .image {
-    width: 120px;
-    height: 120px;
+  .recipeList {
+    border: solid 5px rgb(188, 223, 182);
+    height: 250px;
+    width: 230px;
+    padding: 25px;
+    margin: 10px 0 10px 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(193, 226, 185);
   }
-
-  .footer {
-    height: 100px;
+  .recipeList p {
+    margin: 5px;
   }
-
-  .caption {
-    font-size: 16px;
+  .recipeList img {
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
   }
-
-  div.item {
-    width: 300px;
-  }  
 }
 
 @media screen and (max-width: 768px) and (min-width: 541px) {
@@ -346,7 +328,6 @@ h1 {
     margin: auto;
     row-gap: 80px;
     margin-top: 60px;
-
   }
 
   .image {
@@ -365,7 +346,7 @@ h1 {
 
   div.item {
     width: 300px;
-  }  
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
@@ -410,6 +391,5 @@ h1 {
 
   div.item {
     width: 300px;
-  }  
+  }
 }
->>>>>>> a887f0b95add816da827af8380774caac68428d3
