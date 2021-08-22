@@ -4,34 +4,23 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const Recipes = ({category}) => {
-//   const [recipes, setRecipes] = useState([]);
-
-//   useEffect(() => {
-//     const fetchRecipes = async () => {
-//       try {
-//         const res = await axios.get(
-//           `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&diet=${category}&number=1`
-//         );
-
-//         // console.log(res.data.results);
-//         setRecipes(res.data.results);
-//         // setCategory()
-//       } catch (err) {
-//         console.log(err);
-//       }
-//     };
-//     fetchRecipes();
-//   }, [category]);
-
+const Recipes = ({ recipes }) => {
   return (
     <div>
       List of Recipes
-      <Link to="/recipes/:id">
-        <h1>
-          <Recipe />
-        </h1>
-      </Link>
+      {recipes.map((recipe) => {
+        const { id, title, image } = recipe;
+        return (
+          <ul>
+            <Link to={`/recipes/${id}`}>
+              <li key={id}>
+                <p>{title}</p>
+                <img src={image} alt="vegan" />
+              </li>
+            </Link>
+          </ul>
+        );
+      })}
     </div>
   );
 };
