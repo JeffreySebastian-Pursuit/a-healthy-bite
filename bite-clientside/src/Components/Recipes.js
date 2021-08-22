@@ -4,13 +4,7 @@ import "../styling/Recipes.css";
 const Recipes = ({ category, recipes }) => {
   return (
     <div className="recipes">
-      <h1>List of Recipes from category {category}</h1>
-      <div className="category-summary">
-        Here goes a bit of a small portion of text about a vegetarian diet and
-        it's benefits. this will contain a certain number of words, but not too
-        much.
-      </div>
-
+      <h1>{category} Recipes</h1>
       <ul className="recipe">
         {recipes.map((recipe) => {
           return (
