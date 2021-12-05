@@ -1,8 +1,8 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
+import NavBar from "./Components/NavBar";
 import Recipe from "./Components/Recipe";
 import Recipes from "./Components/Recipes";
 import "./App.css";
@@ -33,9 +33,7 @@ function App() {
 					<Route exact path="/">
 						<Home setCategory={setCategory} />
 					</Route>
-					{/* Index */}
 					<Route exact path="/recipes">
-						{/* mapping through the array */}
 						<Recipes recipes={recipes} category={category} />
 					</Route>
 					{/* Show */}
