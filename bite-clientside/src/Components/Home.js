@@ -7,7 +7,7 @@ const Home = ({ setCategory }) => {
   };
   return (
     <main>
-      <h1 className="heading-title">A HEALTHY BITE</h1>
+      <h2 className="heading-title">A HEALTHY BITE</h2>
       <h5 className="subheading">Healthy food for every mood.</h5>
 
       <section id="home-section">
