@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav>
+      {/* show logo without back button on home page */}
       <NavLink to="/">
         <img
           src="https://spoonacular.com/application/frontend/images/food-api/ontology2.svg"
@@ -11,6 +12,9 @@ const NavBar = () => {
           id="logo"
         />
       </NavLink>
+      {/* <NavLink to={`/recipes`}>
+        <button>Back</button>
+      </NavLink> */}
     </nav>
   );
 };

@@ -18,8 +18,8 @@ function App() {
 					`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&diet=${category}&number=9`
 				);
 				setRecipes(res.data.results);
-			} catch (err) {
-				console.log(err);
+			} catch (error) {
+				return error;
 			}
 		};
 		fetchRecipes();

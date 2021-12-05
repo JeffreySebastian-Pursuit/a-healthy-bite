@@ -1,44 +1,44 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import convertSummary from "../tools/convertSummary";
 import axios from "axios";
 import "../styling/Recipe.css";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
-import convertSummary from "../tools/convertSummary";
 
 const Recipe = () => {
   const [recipe, setRecipe] = useState({});
+  const { title, summary, image, sourceUrl } = recipe;
   const { id } = useParams();
+
+  const fetchRecipe = async () => {
+    try {
+      const res = await axios.get(
+        `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}&includeNutrition=false`
+      );
+      setRecipe(res.data);
+    } catch (error) {
+      return error;
+    }
+  };
+
   useEffect(() => {
-    const fetchRecipe = async () => {
-      try {
-        const res = await axios.get(
-          `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}&includeNutrition=false`
-        );
-        setRecipe(res.data);
-      } catch (error) {}
-    };
     fetchRecipe();
   }, [id]);
 
-  const { title, summary, image, sourceUrl } = recipe;
-
   return (
-    <div>
+    <main>
+      {/* move to navbar*/}
       <Link to={`/recipes`}>
         <button>Back</button>
       </Link>
-      <div className="heading">
-        <div className="lists">
-          <h1 className="title">{title}</h1>
-          <p id="summary"> {convertSummary(summary)}</p>
-          <a href={sourceUrl} target="_blank" rel="noreferrer">
-            Click for more information
-          </a>
-        </div>
-        <img src={image} alt="vegan" className="recipeImage" />
-      </div>
-      <footer></footer>
-    </div>
+
+      <h2 className="recipe-title">{title}</h2>
+      <p id="summary"> {convertSummary(summary)}</p>
+      
+      <img src={image} alt="vegan" className="recipe-image" />
+      <a href={sourceUrl} target="_blank" rel="noreferrer">
+        Click for more information
+      </a>
+    </main>
   );
 };
 

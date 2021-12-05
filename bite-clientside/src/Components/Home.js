@@ -7,10 +7,9 @@ const Home = ({ setCategory }) => {
   };
   return (
     <main>
-      <h2 className="heading-title">A HEALTHY BITE</h2>
+      <h2 className="home-title">A HEALTHY BITE</h2>
       <h5 className="subheading">Healthy food for every mood.</h5>
 
-      <section id="home-section">
         <ul onClick={handleSelection}>
           <li onClick={() => setCategory("vegan")}>
             <img
@@ -48,8 +47,6 @@ const Home = ({ setCategory }) => {
             <h6 className="categories">Pescetarian</h6>
           </li>
         </ul>
-      </section>
-      <footer></footer>
     </main>
   );
 };
