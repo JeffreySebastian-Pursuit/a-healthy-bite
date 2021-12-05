@@ -3,15 +3,15 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div>
+    <nav>
       <NavLink to="/">
         <img
           src="https://spoonacular.com/application/frontend/images/food-api/ontology2.svg"
-          alt="recipe"
-          id="recipeIcon"
+          alt="logo"
+          id="logo"
         />
       </NavLink>
-    </div>
+    </nav>
   );
 };
 
