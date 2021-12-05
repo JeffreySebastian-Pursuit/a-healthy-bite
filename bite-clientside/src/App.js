@@ -26,7 +26,7 @@ function App() {
 	}, [category]);
 
 	return (
-		<main className="App">
+		<section className="App">
 			<Router>
 				<NavBar />
 				<Switch>
@@ -42,7 +42,7 @@ function App() {
 					</Route>
 				</Switch>
 			</Router>
-		</main>
+		</section>
 	);
 }
 

@@ -1,6 +1,4 @@
-
 import {useHistory } from "react-router-dom";
-
 
 const Home = ({ setCategory }) => {
   const history = useHistory();
@@ -8,11 +6,11 @@ const Home = ({ setCategory }) => {
     history.push("/recipes");
   };
   return (
-    <div>
-      <h1 className="Heading-Title">A HEALTHY BITE</h1>
-      <h5 className="Subheading">Healthy food for every mood.</h5>
+    <main>
+      <h1 className="heading-title">A HEALTHY BITE</h1>
+      <h5 className="subheading">Healthy food for every mood.</h5>
 
-      <div id="category">
+      <section id="home-section">
         <div className="item">
           <ul onClick={handleSelection}>
             <li onClick={() => setCategory("vegan")}>
@@ -62,9 +60,9 @@ const Home = ({ setCategory }) => {
             </li>
           </ul>
         </div>
-      </div>
+      </section>
       <footer className="footer"></footer>
-    </div>
+    </main>
   );
 };
 
