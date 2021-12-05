@@ -1,4 +1,4 @@
-import {useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Home = ({ setCategory }) => {
   const history = useHistory();
@@ -11,57 +11,45 @@ const Home = ({ setCategory }) => {
       <h5 className="subheading">Healthy food for every mood.</h5>
 
       <section id="home-section">
-        <div className="item">
-          <ul onClick={handleSelection}>
-            <li onClick={() => setCategory("vegan")}>
-              <img
-                src="https://www.mississippivegan.com/wp-content/uploads/2017/07/bowl-1.jpg"
-                alt="vegan"
-                className="image"
-              />
-              <p className="caption">Vegan</p>
-            </li>
-          </ul>
-        </div>
+        <ul onClick={handleSelection}>
+          <li onClick={() => setCategory("vegan")}>
+            <img
+              className="images"
+              src="https://www.mississippivegan.com/wp-content/uploads/2017/07/bowl-1.jpg"
+              alt="vegan"
+            />
+            <h6 className="categories">Vegan</h6>
+          </li>
 
-        <div className="item">
-          <ul onClick={handleSelection}>
-            <li onClick={() => setCategory("vegetarian")}>
-              <img
-                src="https://domf5oio6qrcr.cloudfront.net/medialibrary/6054/f5282d05-33f5-4c93-a08e-b000164a54db.jpg"
-                alt="vegetarian"
-                className="image"
-              />
-              <p className="caption">Vegetarian</p>
-            </li>
-          </ul>
-        </div>
-        <div className="item">
-          <ul onClick={handleSelection}>
-            <li onClick={() => setCategory("ketogenic")}>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDPdnWFXD3kloqBBy4nYwfFCfRfbvrUHC3w&usqp=CAU"
-                alt="ketogenic"
-                className="image"
-              />
-              <p className="caption">Ketogenic</p>
-            </li>
-          </ul>
-        </div>
-        <div className="item">
-          <ul onClick={handleSelection}>
-            <li onClick={() => setCategory("pescetarian")}>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZvwHaQUuryT0WbnBSYTjwInC68KNTpzoWw&usqp=CAU"
-                alt="pescetarian"
-                className="image"
-              />
-              <p className="caption">Pescetarian</p>
-            </li>
-          </ul>
-        </div>
+          <li onClick={() => setCategory("vegetarian")}>
+            <img
+              className="images"
+              src="https://domf5oio6qrcr.cloudfront.net/medialibrary/6054/f5282d05-33f5-4c93-a08e-b000164a54db.jpg"
+              alt="vegetarian"
+            />
+            <h6 className="categories">Vegetarian</h6>
+          </li>
+
+          <li onClick={() => setCategory("ketogenic")}>
+            <img
+              className="images"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIDPdnWFXD3kloqBBy4nYwfFCfRfbvrUHC3w&usqp=CAU"
+              alt="ketogenic"
+            />
+            <h6 className="categories">Ketogenic</h6>
+          </li>
+
+          <li onClick={() => setCategory("pescetarian")}>
+            <img
+              className="images"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZvwHaQUuryT0WbnBSYTjwInC68KNTpzoWw&usqp=CAU"
+              alt="pescetarian"
+            />
+            <h6 className="categories">Pescetarian</h6>
+          </li>
+        </ul>
       </section>
-      <footer className="footer"></footer>
+      <footer></footer>
     </main>
   );
 };

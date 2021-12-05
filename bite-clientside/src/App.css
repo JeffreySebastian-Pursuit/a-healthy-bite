@@ -3,7 +3,7 @@ body {
     margin: 0;
   }
   
-  .caption {
+  .categories {
     margin-top: 20px;
   }
   
@@ -41,14 +41,14 @@ body {
     margin-right: 45px;
   }
   
-  .image {
+  .images {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     opacity: 0.5;
   }
   
-  .image:hover {
+  .images:hover {
     opacity: 1;
   }
   
@@ -57,7 +57,7 @@ body {
     width: 260px;
   }
   
-  .footer {
+  footer {
     background-color: rgb(22, 84, 38);
     height: 180px;
   }
@@ -85,16 +85,16 @@ body {
       margin: auto;
     }
   
-    .image {
+    .images {
       width: 90px;
       height: 90px;
     }
   
-    .footer {
+    footer {
       height: 30px;
     }
   
-    .caption {
+    .categories {
       font-size: 16px;
     }
   
@@ -125,16 +125,16 @@ body {
       margin: auto;
     }
   
-    .image {
+    .images {
       width: 90px;
       height: 90px;
     }
   
-    .footer {
+    footer {
       height: 50px;
     }
   
-    .caption {
+    .categories {
       font-size: 16px;
     }
   
@@ -165,16 +165,16 @@ body {
       margin: auto;
     }
   
-    .image {
+    .images {
       width: 90px;
       height: 90px;
     }
   
-    .footer {
+    footer {
       height: 100px;
     }
   
-    .caption {
+    .categories {
       font-size: 16px;
     }
   
@@ -205,16 +205,16 @@ body {
       margin: auto;
     }
   
-    .image {
+    .images {
       width: 90px;
       height: 90px;
     }
   
-    .footer {
+    footer {
       height: 100px;
     }
   
-    .caption {
+    .categories {
       font-size: 16px;
     }
   
@@ -248,16 +248,16 @@ body {
       margin-top: 30px;
     }
   
-    .image {
+    .images {
       width: 120px;
       height: 120px;
     }
   
-    .footer {
+    footer {
       height: 100px;
     }
   
-    .caption {
+    .categories {
       font-size: 16px;
     }
   
@@ -291,17 +291,17 @@ body {
   
     }
   
-    .image {
+    .images {
       width: 150px;
       height: 150px;
     }
   
-    .footer {
+    footer {
       margin-top: 135px;
       height: 100px;
     }
   
-    .caption {
+    .categories {
       font-size: 20px;
     }
   
@@ -336,17 +336,17 @@ body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
   
-    .image {
+    .images {
       width: 200px;
       height: 200px;
     }
   
-    .footer {
+    footer {
       margin-top: 135px;
       height: 150px;
     }
   
-    .caption {
+    .categories {
       font-size: 30px;
     }
   

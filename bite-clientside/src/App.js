@@ -41,6 +41,7 @@ function App() {
 						<Recipe />
 					</Route>
 				</Switch>
+				<footer></footer>
 			</Router>
 		</section>
 	);

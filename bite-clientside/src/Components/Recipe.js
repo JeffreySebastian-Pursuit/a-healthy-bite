@@ -37,7 +37,7 @@ const Recipe = () => {
         </div>
         <img src={image} alt="vegan" className="recipeImage" />
       </div>
-      <footer className="footer"></footer>
+      <footer></footer>
     </div>
   );
 };
