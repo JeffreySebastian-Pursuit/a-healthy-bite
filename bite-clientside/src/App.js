@@ -5,7 +5,7 @@ import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
 import Recipe from "./Components/Recipe";
 import Recipes from "./Components/Recipes";
-import "./App.css";
+// import "./App.scss";
 
 function App() {
 	const [recipes, setRecipes] = useState([]);

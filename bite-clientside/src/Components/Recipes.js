@@ -1,5 +1,5 @@
 import React from "react";
-import "../styling/Recipes.css";
+import "../styling/Recipes.scss";
 
 const Recipes = ({ category, recipes }) => {
   return (
